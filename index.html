@@ -26,7 +26,12 @@
 					<p v-else-if="inventory > 0">Almost sold out</p>
 					<p v-else>Out of Stock</p>
 					<p>{{ description }}</p>
+					<ul>
+						<li v-for="detail in details">{{detail}}</li>
+					</ul>
 					<a :href="url">Google</a>
+					<div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
+					<div v-for="size in sizes">{{size}}</div>
 				</div>
 			</div>
 		</div>
