@@ -35,6 +35,7 @@ app.component('product-display', {
                 <button class="button" @click="removeFromCart">Remove from Cart</button>
             </div>
         </div>
+        <review-form></review-form>
     </div>`,
     data: function() {
         return {
